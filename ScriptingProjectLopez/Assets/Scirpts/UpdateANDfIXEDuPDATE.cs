@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class UpdateANDfIXEDuPDATE : MonoBehaviour
 {
+    void FixedUpdate()
+    {
+        Debug.Log("FixedUpdate time :" + Time.deltaTime);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +15,8 @@ public class UpdateANDfIXEDuPDATE : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        
+        Debug.Log("Update time :" + Time.deltaTime);
     }
 }
